@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+    <picture>        
+        <source media="(max-width: 600px )" srcset="imagens/foto-p.png" type="image/png" alt="Imagem flexível">
+        <source media="(max-width: 1000px)" srcset="imagens/foto-m.png" type="image/png" alt="Imagem flexível">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">        
+    </picture>
+
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio src="audio/factory-background.mp3" autoplay controls>Factory Background</audio>
+
+    <audio>
+        <source src="audio/factory-background.mp3" type="/audio/mpeg">
+    </audio>
+
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+
+    <video src="videos/video-limao.mp4" controls autoplay width="500px" poster="">Vídeo de limões caindo na água</video><br>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+  
+</body>
+</html>
