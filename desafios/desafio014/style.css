@@ -15,14 +15,14 @@ html, body {
 main {
     height: 100vh;
     position: relative;
-    background: url("imagens/fundo-madeira.jpg") no-repeat top center;
-    background-size: cover;
-    background-attachment: fixed;
+    
     
 }
 
 body {
-  
+    background: url("imagens/fundo-madeira.jpg") no-repeat top center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section#telefone {
