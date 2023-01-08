@@ -10,21 +10,12 @@
     <h1>Exemplo de Formulários</h1>
     <form action="cadastro.php" method="post" autocomplete="on">
 
-        <p>
-            <label for="in1">Número1:</label>
-            <input type="number" name="n1" id="in1" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
-        </p>
-
-        <p>
-            <label for="in2">Número2:</label>
-            <input type="number" name="n2" id="in2" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
-        </p>
-
-        <p>
-            <label for="isoma">Soma:</label>
-            <output name="soma" id="isoma">0 </output>    
-           
-        </p>
+       <p>
+        <label for="inum">Número:</label>
+        <input type="range" name="num" id="inum" min="1" max="10" value="5" oninput="ival.innerHTML = Number(inum.value)">
+        <output id="ival">5</output>
+     
+       </p>
 
         <p>
             <input type="submit" value="Enviar">
